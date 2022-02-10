@@ -2,3 +2,23 @@ h1 {
   color: aqua;
   background-color: azure;
 }
+
+.nav-el {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-logo {
+  height: 150px;
+}
+.nav-items > li {
+  background-color: coral;
+  font-weight: bolder;
+  margin: 2rem;
+  color: cornsilk;
+  padding: 30px;
+}

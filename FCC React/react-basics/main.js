@@ -11,19 +11,33 @@
 // h1.className = "header";
 // document.getElementById("root").append(h1);
 
-const navbar = (
-  // <Headers> React with the React!</Headers>
-  <nav>
-    <img src="./saraswati.jpg" width="100px"></img>
-    <h1>Reasons I love Programming!</h1>
-    <ul>
-      <li>If you are a programmer then you are a magician!</li>
-      <li>follow your workstyle</li>
-      <li>freedom in career</li>
-    </ul>
+import Header from "./Header.js";
 
-    <footer> copyright 2022 Psm. All rights reserved.</footer>
-  </nav>
-);
+function Footer() {
+  return <footer> copyright 2022 Psm. All rights reserved.</footer>;
+}
 
-ReactDOM.render(navbar, document.getElementById("root"));
+function Maincontent() {
+  return (
+    <div>
+      <h1>Reasons I love Programming!</h1>
+      <ul>
+        <li>If you are a programmer then you are a magician!</li>
+        <li>follow your workstyle</li>
+        <li>freedom in career</li>
+      </ul>
+    </div>
+  );
+}
+
+function Hojai() {
+  return (
+    <div>
+      <Header />
+      <Maincontent />
+      <Footer />
+    </div>
+  );
+}
+
+ReactDOM.render(<Hojai />, document.getElementById("root"));
