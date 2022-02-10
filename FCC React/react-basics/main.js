@@ -12,13 +12,17 @@
 // document.getElementById("root").append(h1);
 
 const navbar = (
+  // <Headers> React with the React!</Headers>
   <nav>
-    <h1>Coffee Junkie</h1>
+    <img src="./saraswati.jpg" width="100px"></img>
+    <h1>Reasons I love Programming!</h1>
     <ul>
-      <li>About</li>
-      <li>Info</li>
-      <li>findout</li>
+      <li>If you are a programmer then you are a magician!</li>
+      <li>follow your workstyle</li>
+      <li>freedom in career</li>
     </ul>
+
+    <footer> copyright 2022 Psm. All rights reserved.</footer>
   </nav>
 );
 
