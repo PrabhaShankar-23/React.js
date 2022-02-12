@@ -11,7 +11,21 @@
 // h1.className = "header";
 // document.getElementById("root").append(h1);
 
-import Header from "./Header.js";
+function Header() {
+  return (
+    <headers>
+      <nav className="nav-el">
+        <img src="./saraswati.jpg" className="nav-logo"></img>
+
+        <ul className="nav-items">
+          <li>About</li>
+          <li>Problems Solved</li>
+          <li>Projects Made</li>
+        </ul>
+      </nav>
+    </headers>
+  );
+}
 
 function Footer() {
   return <footer> copyright 2022 Psm. All rights reserved.</footer>;
@@ -30,7 +44,7 @@ function Maincontent() {
   );
 }
 
-function Hojai() {
+function App() {
   return (
     <div>
       <Header />
@@ -40,4 +54,4 @@ function Hojai() {
   );
 }
 
-ReactDOM.render(<Hojai />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
