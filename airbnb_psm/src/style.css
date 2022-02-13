@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 50px;
+}
+
+/* this is included because in safari browser there was bug which led to expansion of logo. */
+
+.nav--logo {
+  max-width: 100px;
+}
+
+.Hero--body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: rgb(185, 63, 124);
+  margin: 26px 77px;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: rgb(10, 10, 10);
+  margin: 20px 36px;
+}
+
+P {
+  color: rgb(14, 13, 13);
+  margin: 20px 36px;
+}
+.Hero--collage {
+  align-self: center;
+  max-width: 400px;
+}
+
+/* dividing your common portions helps you in better style planning. 
+So include sections in them.*/
