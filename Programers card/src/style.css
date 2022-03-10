@@ -51,6 +51,7 @@ h1 {
   margin-top: 0;
 }
 
+/* for making those colored bullet marks. */
 li::marker {
   font-size: 1.4rem;
   color: aqua;

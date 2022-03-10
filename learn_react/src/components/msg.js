@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function msg() {
-  return <div> Hello World</div>;
+  return (
+    <div>
+      <p>Helloo World</p>
+    </div>
+  );
 }

@@ -1,9 +1,10 @@
 import React from "react";
-import msg from "./components/msg";
+import _msg from "./components/msg.js";
+
 export default function App() {
   return (
     <div>
-      <msg />
+      <_msg />
       <p>Helloooo</p>
     </div>
   );
