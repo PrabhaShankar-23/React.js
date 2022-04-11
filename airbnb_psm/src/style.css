@@ -10,6 +10,7 @@ nav {
   padding: 10px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 50px;
+  max-width: 40rem;
 }
 
 /* this is included because in safari browser there was bug which led to expansion of logo. */
@@ -22,9 +23,10 @@ nav {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-color: rgb(185, 63, 124);
   margin: 26px 77px;
   background-color: #ffffff;
+  justify-content: center;
+  max-width: 40rem;
 }
 
 h1 {
@@ -34,7 +36,7 @@ h1 {
 
 .Hero--body > p {
   color: rgb(14, 13, 13);
-  margin: 20px 36px;
+  margin: 20px 10px;
 }
 .Hero--collage {
   align-self: center;
@@ -45,6 +47,15 @@ h1 {
 So include sections in them.*/
 
 /*===================== Card */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+  max-width: 40rem;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -54,6 +65,7 @@ So include sections in them.*/
 .card--section {
   width: 175px;
   font-size: 12px;
+  margin: auto .4rem;
 }
 
 .card--stats {

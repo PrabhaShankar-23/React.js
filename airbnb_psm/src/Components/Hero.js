@@ -1,11 +1,11 @@
 import React from "react";
-import collage from "../images/Group 77.png";
+// import collage from "../images/Group 77.png";
 export default function Hero() {
   return (
     <div className="Hero--body">
       <div>
         <img
-          src={collage}
+          src="./images/Group 77.png"
           className="Hero--collage"
           alt="beutiful_collage"
         ></img>
