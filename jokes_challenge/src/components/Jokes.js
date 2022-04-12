@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Jokes(joke) {
-  console.log(joke.comments);
   return (
     <div>
       {joke.setup && <h3>Setup : {joke.setup}</h3>}
