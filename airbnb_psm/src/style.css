@@ -23,7 +23,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 26px 77px;
+  margin: 40px 40px;
   background-color: #ffffff;
   justify-content: center;
   max-width: 40rem;
@@ -36,7 +36,7 @@ h1 {
 
 .Hero--body > p {
   color: rgb(14, 13, 13);
-  margin: 20px 10px;
+  margin: 20px auto;
 }
 .Hero--collage {
   align-self: center;
@@ -66,6 +66,10 @@ So include sections in them.*/
   width: 175px;
   font-size: 12px;
   margin: auto .4rem;
+  position: relative;
+  flex: 0 0 auto;
+  flex-direction: column;
+  display: flex;
 }
 
 .card--stats {
@@ -75,4 +79,14 @@ So include sections in them.*/
 
 .card--star {
   width: 15px;
+}
+
+.card--badge {
+  position:absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
