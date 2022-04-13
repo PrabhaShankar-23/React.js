@@ -1,3 +1,11 @@
+import React from "react";
+import Header from "./components/Header";
+import Form from "./components/Form";
 export default function App() {
-  return <h1>superman Returns!</h1>;
+  return (
+    <div>
+      <Header />
+      <Form />
+    </div>
+  );
 }
