@@ -1,20 +1,15 @@
 import React, { useState } from "react";
 
 export default function Forms() {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [formData, setFormData] = useState({ firstname: "", lastname: "" });
 
-  console.log(firstname, lastname);
+  console.log(formData);
+
   function handlechange(event) {
-    // console.log(event.target.value);
-    // console.log("oh! I see a change ");
-    setFirstname(event.target.value);
-  }
-
-  function handlechange2(event) {
-    // console.log(event.target.value);
-    // console.log("oh! I see a change ");
-    setLastname(event.target.value);
+    console.log(event.target.value);
+    setFormData((prevData) => {
+      return { ...prevData, [event.target.name]: event.target.value };
+    });
   }
 
   return (
@@ -40,7 +35,7 @@ export default function Forms() {
           className="input"
           name="lastname"
           placeholder="lastname"
-          onChange={handlechange2}
+          onChange={handlechange}
         />
         <br />
         <br />
