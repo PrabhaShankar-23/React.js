@@ -36,7 +36,7 @@ export default function Meme() {
   }
 
   return (
-    <div className="memepage">
+    <div className="meme">
       <div className="form">
         <input
           className="form--input"
@@ -60,7 +60,7 @@ export default function Meme() {
           Get Meme Image 🎨
         </button>
       </div>
-      <section className="meme">
+      <section className="meme--section">
         <img className="meme--img" src={memeImg.RandomImg} alt="memeImg" />
         <h1 className="meme--text top">{memeImg.topText}</h1>
         <h1 className="meme--text bottom">{memeImg.bottomText}</h1>
