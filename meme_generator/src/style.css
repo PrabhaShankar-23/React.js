@@ -69,6 +69,7 @@ body {
     cursor: pointer;      
     margin-top: 1rem; 
     height: 2.5rem;
+    z-index: 1;
     /* max-width: 100rem; */
 }
 
@@ -101,9 +102,11 @@ body {
 }
 .meme--img{
     /* position: relative; */
-    border-radius: 1rem;
-    margin-top: 4rem;
-    height: 75%;
+        border-radius: 1rem;
+        /* height: 75%; */
+        margin-top: 4rem;
+        width: 80%;
+        max-width: 800px;
 }
 
 
