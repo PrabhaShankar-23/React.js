@@ -1,8 +1,10 @@
+import { Outlet } from "react-router-dom";
 const Home = () => {
   return (
     <>
+      <h1>Hello HOme page</h1>
       <section className="section">
-        <div>Hello Home</div>
+        <Outlet />
       </section>
     </>
   );
