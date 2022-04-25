@@ -1,12 +1,10 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 const Home = () => {
   return (
-    <>
-      <h1>Hello HOme page</h1>
-      <section className="section">
-        <Outlet />
-      </section>
-    </>
+    <section className="section">
+      {/* <Outlet /> */}
+      <h1>Hello Home page</h1>
+    </section>
   );
 };
 export default Home;
