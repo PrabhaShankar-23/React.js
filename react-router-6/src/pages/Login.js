@@ -12,7 +12,6 @@ const Login = (setuser) => {
     setuser({ name: name, email: email });
     navigate("/dashboard");
   };
-  console.log(handleSubmit);
 
   return (
     <section className="section">
