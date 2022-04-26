@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const Login = (setuser) => {
+const Login = ({ setUser }) => {
+  // we are getting the object here so we it is kind of destructuring
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); //prevents page reload.
     console.log(name, email);
+    console.log(setUser);
+
     if (!name || !email) return;
-    setuser({ name: name, email: email });
+    setUser({ name: name, email: email });
     navigate("/dashboard");
   };
 
