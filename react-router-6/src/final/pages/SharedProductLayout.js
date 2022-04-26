@@ -1,8 +1,8 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <h2>products</h2>
+      <h4>products</h4>
       <Outlet />
     </>
   );
