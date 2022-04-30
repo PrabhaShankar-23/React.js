@@ -1,6 +1,12 @@
 const redux = require("redux");
 const createstore = redux.createStore;
 const bindActionCreators = redux.bindActionCreators; // helper function
+const combineReducers = redux.combineReducers;
+const applyMiddleware = redux.applyMiddleware;
+
+const reduxlogger = require("redux-logger");
+// logger is middleware overhere
+const logger = reduxlogger.createLogger();
 
 const CAKE_ORDERED = "CAKE_ORDERED";
 const CAKE_RESTOCKED = "CAKE_RESTOCKED";
@@ -87,12 +93,21 @@ const IceCreamreducer = (state = initialIceCreamstate, action) => {
   }
 };
 
-const store = createstore(reducer);
+//the reducers are being combined to form this.
+const rootreducer = combineReducers({
+  cake: Cakereducer,
+  Ice_cream: IceCreamreducer,
+});
+
+const store = createstore(rootreducer, applyMiddleware(logger));
 console.log("Initial stage", store.getState());
 
-const unsubscribe = store.subscribe(() =>
-  console.log("update state", store.getState())
-);
+// const unsubscribe = store.subscribe(() =>
+//   console.log("update state", store.getState())
+// );
+
+// as we have logger middleware to handle that.
+const unsubscribe = store.subscribe(() => {});
 // store.dispatch(orderCake());
 // store.dispatch(orderCake());
 // store.dispatch(orderCake());
