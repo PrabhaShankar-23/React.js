@@ -1,11 +1,13 @@
-import React from "react";
-import _msg from "./components/msg.js";
+import React, { useState } from "react";
+import Msg from "./components/msg.js";
+import State from "./components/state.js";
+// import { useState } from "react";
 
 export default function App() {
   return (
     <div>
-      <_msg />
-      <p>Helloooo</p>
+      <Msg />
+      <State />
     </div>
   );
 }
