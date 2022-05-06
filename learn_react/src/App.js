@@ -6,7 +6,7 @@ import State from "./components/state.js";
 export default function App() {
   return (
     <div>
-      <Msg />
+      {/* <Msg /> */}
       <State />
     </div>
   );
